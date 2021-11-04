@@ -27,11 +27,12 @@
                             </button>
                             <nav class='menu__body'>
                                 <ul class='menu__list'>
-                                    <li class='menu__item'><a href='#' class='menu__link'>Home</a></li>
-                                    <li class='menu__item'><a href='#' class='menu__link'>Program</a></li>
-                                    <li class='menu__item'><a href='#' class='menu__link'>Nutritions</a></li>
-                                    <li class='menu__item'><a href='#' class='menu__link'>Pricing</a></li>
-                                    <li class='menu__item'><a href='#' class='menu__link'>About</a></li>
+                                    <li class='menu__item'><a data-goto=".main" href='#' class='menu__link'>Home</a></li>
+                                    <li class='menu__item'><a data-goto=".programs" href='#' class='menu__link'>Program</a></li>
+                                    <li class='menu__item'><a data-goto=".programs" href='#' class='menu__link'>Nutritions</a></li>
+                                    <li class='menu__item'><a data-goto=".pricing" href='#' class='menu__link'>Pricing</a></li>
+                                    <li class='menu__item'><a data-goto=".about" href='#' class='menu__link'>About</a></li>
+                                    <li class='menu__item'><a data-goto=".footer" href='#' class='menu__link'>Footer</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -188,7 +189,7 @@
                 </div>
             </section>
 
-            <section class="pricing" style="display: none;">
+            <section class="pricing">
                 <div class='pricing__container _container'>
 
                     <div class="pricing__block-top block-top" >
@@ -265,7 +266,7 @@
                 <div class="pricing__color"></div>
             </section>
 
-            <section class="about" style="display: none;">
+            <section class="about">
                 <div class='about__container _container'>
 
                     <div class="about__block-top block-top">
@@ -410,7 +411,7 @@
                         </div>
                     </div>
 
-                    <div data-spollers="768,max" class="footer__menu menu-footer">
+                    <div data-spollers="767,max" class="footer__menu menu-footer">
 
                         <div class="menu-footer__column">
                             <button data-spoller class="menu-footer__title">Product</button>
