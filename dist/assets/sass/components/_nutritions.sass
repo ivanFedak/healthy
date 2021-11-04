@@ -1,0 +1,40 @@
+.nutritions 
+    @include adaptiv-value('padding-top', 50, 20, 1)
+    @include adaptiv-value('padding-bottom', 50, 20, 1)
+    &__container
+    &__wrapper
+        display: flex
+        align-items: center
+      
+    &__content
+        
+
+
+
+    &__body
+        @media (min-width: $md3 + px)//More 768      
+            flex: 0 1 44.5%
+            @include adaptiv-value('padding-left', 58, 0, 1)
+    &__block-top
+        &:not(:last-child)
+            margin-bottom: 10px
+    &__label
+        text-align: left
+    &__title
+        text-align: left
+        color: $darkBlue
+    &__text
+        font-size: 15px
+        line-height: 200%
+        text-transform: capitalize
+        &:not(:last-child)
+            margin-bottom: 30px/15px * 1em
+        span
+            font-weight: 500
+            color: $darkBlue
+    &__btns
+        display: flex
+        flex-wrap: wrap
+    &__btn
+        min-width: 157px
+        font-weight: 500
