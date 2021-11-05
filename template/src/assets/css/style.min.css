@@ -1309,12 +1309,12 @@ body.ie ._ibg img {
 }
 
 .about__info:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1140px) {
   .about__info:not(:last-child) {
-    margin-bottom: calc(25px + 25 * ((100vw - 320px) / 820));
+    margin-bottom: calc(30px + 10 * ((100vw - 320px) / 820));
   }
 }
 
@@ -1897,27 +1897,6 @@ body.ie ._ibg img {
 
 .image-member__img img {
   border-radius: 8px;
-}
-
-.image-member__block {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-}
-
-@media (min-width: 767.98px) {
-  .image-member__block {
-    position: relative;
-  }
-  .image-member__block:first-child {
-    top: 20px;
-  }
-}
-
-@media (min-width: 767.98px) and (max-width: 1140px) {
-  .image-member__block:first-child {
-    top: calc(15px + 5 * ((100vw - 320px) / 820));
-  }
 }
 
 .footer__container {
