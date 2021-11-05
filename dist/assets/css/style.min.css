@@ -1516,16 +1516,48 @@ body.ie ._ibg img {
           align-items: center;
 }
 
-@media (min-width: 767.98px) {
-  .nutritions__body {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 44.5%;
-            flex: 0 1 44.5%;
-    padding-left: 58px;
+@media (max-width: 767.98px) {
+  .nutritions__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media (min-width: 767.98px) and (max-width: 1140px) {
+.nutritions__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 605px;
+          flex: 0 1 605px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .nutritions__content {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.nutritions__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 58px;
+}
+
+@media (max-width: 1140px) {
   .nutritions__body {
     padding-left: calc(0px + 58 * ((100vw - 320px) / 820));
   }
@@ -1570,6 +1602,142 @@ body.ie ._ibg img {
 .nutritions__btn {
   min-width: 157px;
   font-weight: 500;
+}
+
+.item-nutritions {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-nutritions_top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .item-nutritions_top {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.item-nutritions_top .item-nutritions__achive {
+  top: 0;
+  left: 0;
+}
+
+.item-nutritions_bottom {
+  bottom: 65px;
+}
+
+@media (max-width: 767.98px) {
+  .item-nutritions_bottom {
+    bottom: 65px;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 1140px) {
+  .item-nutritions_bottom {
+    bottom: calc(20px + 45 * ((100vw - 320px) / 820));
+  }
+}
+
+.item-nutritions_bottom .item-nutritions__achive {
+  bottom: 0;
+  right: 0;
+}
+
+.item-nutritions__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 472px;
+}
+
+@media (min-width: 767.98px) {
+  .item-nutritions__image {
+    max-width: 472px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1140px) {
+  .item-nutritions__image {
+    max-width: calc(100px + 372 * ((100vw - 320px) / 820));
+  }
+}
+
+.item-nutritions__image img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.item-nutritions__achive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 4;
+  padding: 15px;
+  background: #161D2F;
+  border-radius: 10px;
+}
+
+@media (max-width: 1140px) {
+  .item-nutritions__achive {
+    padding: calc(10px + 5 * ((100vw - 320px) / 820));
+  }
+}
+
+@media (min-width: 991.98px) {
+  .item-nutritions__achive {
+    min-width: 200px;
+  }
+}
+
+.item-nutritions__icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+@media (min-width: 479.98px) {
+  .item-nutritions__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.item-nutritions__icon img {
+  width: 100%;
+}
+
+.item-nutritions__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+@media (max-width: 479.98px) {
+  .item-nutritions__label {
+    display: none;
+  }
 }
 
 .member {

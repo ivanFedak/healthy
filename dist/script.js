@@ -3124,7 +3124,7 @@ __webpack_require__.r(__webpack_exports__);
 var header = function header() {
   var header = document.querySelector('header');
   window.addEventListener('scroll', function (e) {
-    if (window.scrollY >= header.offsetHeight) {
+    if (this.document.documentElement.scrollTop >= header.offsetHeight) {
       header.classList.add('_scroll');
     } else {
       header.classList.remove('_scroll');
@@ -3609,6 +3609,10 @@ var Slider = function Slider() {
       },
       breakpoints: {
         //when window width is >= 320px //More
+        260: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
         320: {
           slidesPerView: 1.1,
           spaceBetween: 15
@@ -3619,7 +3623,7 @@ var Slider = function Slider() {
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 32
+          spaceBetween: 30
         }
       }
     });

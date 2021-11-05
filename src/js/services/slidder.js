@@ -78,6 +78,11 @@ const Slider = ()=>{
 
 			breakpoints:{
 				//when window width is >= 320px //More
+				260:{
+					slidesPerView: 1,
+					spaceBetween: 10
+				},
+
 				320:{
 					slidesPerView: 1.1,
 					spaceBetween: 15
@@ -90,7 +95,7 @@ const Slider = ()=>{
 
 				992:{
 					slidesPerView: 3,
-					spaceBetween: 32
+					spaceBetween: 30
 				}
 			}
 		});

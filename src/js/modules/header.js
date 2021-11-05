@@ -4,7 +4,7 @@ const header = ()=>{
 
     window.addEventListener('scroll',function(e){
 
-        if(window.scrollY >= header.offsetHeight){
+        if(this.document.documentElement.scrollTop >= header.offsetHeight){
             header.classList.add('_scroll')
         }else{
             header.classList.remove('_scroll')
